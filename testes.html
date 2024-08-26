@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Testes - Vento Norte</title>
+</head>
+<body class="testes">
+    <div class="top-bar">
+        <button class="open-btn" onclick="openSidebar()">&#9776;</button>
+        <span>Vento Norte - Testes</span>
+    </div>
+
+    <div class="sidebar" id="mySidebar">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar()">&times;</a>
+        <a href="index.html">Início</a>
+        <a href="testes.html">Testes</a>
+        <a href="#dados">Dados em Tempo Real</a>
+    </div>
+
+    <div class="container">
+        <div class="text-box">
+            <p>Testes em andamento, cheque futuramente.</p>
+        </div>
+    </div>
+
+    <div class="stars">
+        <script>
+            function createStars() {
+                const stars = document.querySelector('.stars');
+                const count = 100; 
+                for (let i = 0; i < count; i++) {
+                    const star = document.createElement('div');
+                    star.classList.add('star');
+                    star.style.top = Math.random() * 100 + '%';
+                    star.style.left = Math.random() * 100 + '%';
+                    stars.appendChild(star);
+                }
+            }
+            createStars();
+        </script>
+    </div>
+    <img src="Nuvens.png" height="200px">
+
+    <script src="main.js"></script>
+</body>
+</html>
