@@ -16,6 +16,7 @@
     <div class="sidebar" id="mySidebar">
         <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar()">&times;</a>
         <a href="index.html">Início</a>
+        <a href="nos.html">Sobre o Grupo</a>
         <a href="testes.html">Testes</a>
         <a href="#dados">Dados em Tempo Real</a>
     </div>
@@ -46,17 +47,19 @@
     </div>
 
     <script src="main.js"></script>
-    <div class="stars">
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-    </div>
+    <script>
+        function createStars() {
+            const stars = document.querySelector('.stars');
+            const count = 100; 
+            for (let i = 0; i < count; i++) {
+                const star = document.createElement('div');
+                star.classList.add('star');
+                star.style.top = Math.random() * 100 + '%';
+                star.style.left = Math.random() * 100 + '%';
+                stars.appendChild(star);
+            }
+        }
+        createStars();
+    </script>
 </body>
 </html>

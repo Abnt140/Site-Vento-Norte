@@ -241,3 +241,42 @@ body.testes {
     100% { opacity: 0.8; }
 }
 
+body.nos {
+    background: linear-gradient(to top, #0074d9, #001f3f);
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+    color: #ffffff;
+    padding-top: 20px;
+}
+.accordion {
+    background-color: #2980b9;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.accordion:hover, .accordion.active {
+    background-color: #3498db;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: #0074d9;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border: 1px solid #3498db;
+    border-radius: 0 0 5px 5px;
+}
+
+
